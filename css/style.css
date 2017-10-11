@@ -36,7 +36,7 @@ background: black;
 #authors .fa {
   font-size: 25px; }
 
-#authors .card:hover {
+#my-work .card:hover {
   background: #3292a6;
   color: #fff; }
   #authors .card:hover .fa {
