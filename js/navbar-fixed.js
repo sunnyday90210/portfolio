@@ -28,10 +28,10 @@ function scrollToSection(self) {
   // var targetPos = $(href).offset().top - navHeight + 5;
 
   // scroll to target
-  $('html, body').animate({
-    scrollTop: targetPos
-  }, 400);
-}
+//   $('html, body').animate({
+//     scrollTop: targetPos
+//   }, 400);
+// }
 
 /*
 * Updates active section on scroll
@@ -133,6 +133,6 @@ function activateCurrentSection() {
   //   }
   // });
 
-  
+
 
 })(jQuery); // End of use strict

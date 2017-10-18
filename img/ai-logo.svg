@@ -6,19 +6,23 @@
 	.st0{fill:#231F20;}
 	.st1{fill:#F9F9FA;}
 	.st2{display:none;fill:#606161;}
-	.st3{fill:#675D61;}
+	.st3{fill:url(#SVGID_1_);}
 	.st4{display:none;fill:#231F20;}
 	.st5{fill:#171617;}
 	.st6{fill:#030303;}
 	.st7{fill:#EBEBEB;}
 	.st8{fill:#FFFFFF;}
 </style>
-<path class="st0" d="M44.9,45h430.9V467H44.9V45z"/>
+<path class="st0" d="M44.9,45h430.9v422H44.9V45z"/>
 <rect x="124.6" y="132.9" class="st1" width="254.4" height="246.1"/>
 <polygon class="st2" points="261.3,434 383.6,400.1 412.3,78 261.3,78 "/>
-<path class="st3" d="M202.1,259.7h38.2l-19.1-74.1L202.1,259.7z M77.5,78V434h366.3V78H77.5z M261.3,340.9l-14-48.1h-51.7l-14,48.1
-	h-35.4l49.8-170.2v-18.6h47.5l56.8,188.8H261.3z M355.4,340.9h-38.2V197.3h38.2V340.9z M336.5,180.1c-10.9,0-19.8-8.8-19.8-19.6
-	c0-10.8,8.9-19.6,19.8-19.6s19.8,8.8,19.8,19.6C356.3,171.3,347.4,180.1,336.5,180.1z"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="77.5" y1="256" x2="443.8" y2="256">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="1" style="stop-color:#000000"/>
+</linearGradient>
+<path class="st3" d="M202.1,259.7h38.2l-19.1-74.1L202.1,259.7z M77.5,78v356h366.3V78H77.5z M261.3,340.9l-14-48.1h-51.7l-14,48.1
+	h-35.4L196,170.7v-18.6h47.5l56.8,188.8H261.3z M355.4,340.9h-38.2V197.3h38.2V340.9z M336.5,180.1c-10.9,0-19.8-8.8-19.8-19.6
+	s8.9-19.6,19.8-19.6s19.8,8.8,19.8,19.6S347.4,180.1,336.5,180.1z"/>
 <g>
 	<polygon class="st4" points="-446.1,414.3 -473.2,110.6 -175.7,110.6 -202.8,414.2 -324.6,448 	"/>
 	<g>

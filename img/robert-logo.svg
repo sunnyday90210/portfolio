@@ -3,14 +3,15 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 260 260" style="enable-background:new 0 0 260 260;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#3292A6;}
-	.st1{font-family:'MyriadPro-Regular';}
-	.st2{font-size:239.4104px;}
-	.st3{fill:#FCFCFC;}
-	.st4{font-size:64.3072px;}
+	.st0{display:none;}
+	.st1{fill:#ffffff;}
+	.st2{font-family:'MyriadPro-Bold';}
+	.st3{font-size:239.4104px;}
+	.st4{fill:#f70055;}
+	.st5{font-size:64.3072px;}
 </style>
-<rect width="260" height="260"/>
-<text transform="matrix(1 0 0 1 68.6882 173.7676)" class="st0 st1 st2">R</text>
-<text transform="matrix(1 0 0 1 57.6882 173.7676)" class="st3 st1 st2">R</text>
-<text transform="matrix(1 0 0 1 39.0781 237.2695)" class="st3 st1 st4">Robert</text>
+<rect class="st0" width="260" height="260"/>
+<text transform="matrix(1 0 0 1 68.6882 173.7676)" class="st1 st2 st3">R</text>
+<text transform="matrix(1 0 0 1 57.6882 173.7676)" class="st4 st2 st3">R</text>
+<text transform="matrix(1 0 0 1 39.0781 237.2695)" class="st4 st2 st5">Robert</text>
 </svg>

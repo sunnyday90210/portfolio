@@ -1,580 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Robert's Portfolio</title>
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="img/favicon.png">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet">
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
 </head>
+<body>
 
-<body id="home">
+  <!-- Navbar -->
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-  <div class="container">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      Menu
-      <i class="fa fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-        </li>
+<div class="navbar-fixed">
+  <nav id="nav-height" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#index-banner" class="brand-logo"><i class="material-icons">code</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#index-banner"><i class="material-icons">home</i></a></li>
+        <li><a href="#skills"><i class="material-icons">developer_mode</i></a></li>
+        <li><a href="#portfolio"><i class="material-icons">import_contacts</i></a></li>
+        <li><a href="#contact"><i class="material-icons">email</i></a></li>
       </ul>
+
+<!-- End of Navbar -->
+
+<!-- Navbar for mobile -->
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#index-banner">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</div>
+
+<!-- End of Navbar mobile -->
+
+
+<!-- Home Section with parallax -->
+
+  <div id="index-banner" class="parallax-container">
+    <div id="particles"></div>
+    <div class="section no-pad-bot">
+      <div class="container">
+      <br><br>
+       <h1 class="header left">Hi,<br/>I'm Robert, <br/>web developer.</h1>
+        <div class="row" id="frontEnd">
+          <h6 class="header col s12 light">Front end developer / Graphic design / learning React</h6>
+        </div>
+      <div class="row" id="frontEnd">
+        <h6 class="header col s12 light">
+          <button data-target="modal1" class="btn modal-trigger">About Me</button>
+          <div id="modal1" class="modal">
+            <div class="modal-content black-text">
+              <h4>About Me</h4>
+              <p>I am a front-end developer that started out in graphic design using photoshop, illustrator, sketchapp. I have a keen eye for design and I think as a natural progression I moved to coding. So I can mockup the wireframes and then create the design with code. I have a passion for learning and knowledge, I am currently learning React and getting familiar with backend technologies. My future goal is to become a full stack web developer.<br/><strong>Skilled In:</strong> HTML, CSS, Bootstrap, Responsive Design, javascript, jQuery and Git.<br/><strong>Familiar with:</strong> SASS, Gulp, Local Storage, Firebase, Restful API, AJAX, MySql, MongoDB, Mongoose, Handlebars.js, Express, Node.js, Webpack, Babel, Sequelize, React.js, Heroku.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+          </div>
+        </h6>
+      </div>
+        <br><br>
+      </div>
+    </div>   
+    <div class="parallax"></div>
+  </div>
+
+  <!-- Skills -->
+
+  <div id="skills" class="grey lighten-2">
+  <div class="container">
+    <div class="section">
+      <h1 class="header center" id="skillsText">SKILLS</h1>      
+        <div class="row">
+          <div class="col s12 m2">
+           <div class="card">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="card-img" src="img/html5-logo.svg">
+                    </div>                 
+                </div>
+          </div>  
+        <div class="col s12 m2">
+          <div class="card">
+            <div class="waves-effect waves-block waves-light">
+              <img class="card-img" src="img/css3-logo.svg">
+            </div>
+        
+          </div>
+        </div>  
+          <div class="col s12 m2">
+            <div class="card">
+              <div class="waves-effect waves-block waves-light">
+                <img class="card-img" src="img/js-logo.svg">
+              </div>
+            </div>
+          </div>
+        <div class="col s12 m2">
+          <div class="card">
+            <div class="waves-effect waves-block waves-light">
+              <img class="card-img" src="img/ai-logo.svg">
+            </div>
+          </div>
+        </div>
+          <div class="col s12 m2">
+            <div class="card">
+              <div class="waves-effect waves-block waves-light">
+                <img class="card-img" src="img/ps-logo.svg">
+              </div>
+          
+            </div>
+          </div>
+          <div class="col s12 m2">
+            <div class="card">
+              <div class="waves-effect waves-block waves-light">
+                <img class="card-img" src="img/git-logo.svg">
+              </div>
+           </div>
+          </div>
+          </div>  
     </div>
   </div>
-</nav>
+</div>
+<!-- End of Skills -->
 
-  <!-- Particles.js -->
-  <section id="showcase" class="py-5">
-    <div class="primary-overlay text-white">
-      <div class="container">
-        <div id="particles"></div>
-        <div class="row">
-          <div class="col-lg-6 text-center">
-            <h1 id="text" class="display-5 mt-5 pt-5 text-dark text-left">
-              <span>Hi,</span>
-              <br/>
-              <span>I'm Robert</span>
-              <br/>
-              <span>front end developer.</span>
-            </h1>
-            <a href="#contact" class="btn btn-outline-secondary btn-lg text-white" id="buttonLeft">
-              <i class="fa fa-arrow-right"></i> Contact Me</a>
+
+
+
+<!-- Particles Parallax -->
+
+<div id="particles-banner" class="parallax-container">
+  <div id="particles1"></div>
+  <div class="section no-pad-bot">
+    <div class="container"></div>    
+  </div>
+  <div class="parallax"></div>
+</div>
+<!-- End of the parallax particles -->
+
+
+<!-- Start of Portfolio -->
+
+<div class="section scrollspy grey lighten-2" id="portfolio">
+  <div class="container">
+    <h1 class="header center" id="portText">PORTFOLIO</h1>
+    <div class="row">
+      <div class="col s12 m4 l4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/parallax-index.png">
           </div>
-          <div class="col-lg-6">
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Parallax Demo Website
+              <i class="material-icons right">more_vert</i>              
+            </span>
+            <p>
+              <a href="https://d3mlp1x79wx0sb.cloudfront.net/" target="blank">Project link</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Parallax Demo Website
+              <i class="material-icons right">close</i>
+            </span>
+            <p>A parallax Demo website using only HTML5 and CSS for the parallax scrolling animation.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4 l4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/particle-index.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Particles Login
+              <i class="material-icons right">more_vert</i>
+            </span>
+            <p>
+              <a href="https://d1cqx6czddo81k.cloudfront.net/" target="blank">Project link</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Particles Login
+              <i class="material-icons right">close</i>
+            </span>
+            <p>A sign-in form using particles.js. I made the particles interactive on mouse hover, and clicks. Technologies used: HTML5,
+            CSS, particles.js, and AWS.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4 l4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/coffee-index.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Responsive Web Form
+              <i class="material-icons right">more_vert</i>
+            </span>
+            <p>
+              <a href="https://d1viw1ez44n4fb.cloudfront.net/" target="blank">Project link</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Responsive Web Form
+              <i class="material-icons right">close</i>
+            </span>
+            <p>Responsive web form using HTML5 and CSS3 that captures customers contact information using a NOSQL database with Firebase
+            and authentication, and deployed on AWS.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4 l4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/marketing-index.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Graphic Design
+              <i class="material-icons right">more_vert</i>
+            </span>
+            <p>
+              <a href="https://robertjohnwollny.wixsite.com/design/portraits" target="blank">Project link</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Graphic Design
+              <i class="material-icons right">close</i>
+            </span>
+            <p>Just some of my old Graphic design, and ads.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4 l4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/home-page-index.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Portfolio
+              <i class="material-icons right">more_vert</i>
+            </span>
+            <p>
+              <a href="#">Project link</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Portfolio
+              <i class="material-icons right">close</i>
+            </span>
+            <p>Created my portfolio from scratch. This is the first time using Materlize framework. I used HTML5 CSS3 Materialize Javascript particalJS and the fist time using PHP for my contact form. I am going to rebuild my site in React as one of my side projects.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4 l4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/animejs-index.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">AnimeJS
+              <i class="material-icons right">more_vert</i>
+            </span>
+            <p>
+              <a href="https://sunnyday90210.github.io/animejs/" target="blank">Project link</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">AnimeJS
+              <i class="material-icons right">close</i>
+            </span>
+            <p>This was just a fun time testing AnimeJS so I can use it on my next project</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- SKILLS -->
+<!-- END of Portfolio -->
 
-  <section id="skills" class="py-5 bg-success">
-    <div class="container align-center">
-        <h2 class="text-center">Skills</h2>
-      <div class="row">
-        <div class="col-md-2">
-          <div class="card text-center border-primary">
-            <div class="card-body">
-              <img src="img/html5-logo.svg" class="img-fluid" alt="html5 logo">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card text-center border-primary">
-            <div class="card-body">
-              <img src="img/css3-logo.svg" class="img-fluid" alt="html5 logo">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card text-center border-primary">
-            <div class="card-body">
-              <img src="img/js-logo.svg" class="img-fluid" alt="html5 logo">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card text-center border-primary">
-            <div class="card-body">
-              <img src="img/ai-logo1.svg" class="img-fluid" alt="html5 logo">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card text-center border-primary">
-            <div class="card-body">
-              <img src="img/ps-logo1.svg" class="img-fluid" alt="html5 logo">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card text-center border-primary">
-            <div class="card-body">
-              <img src="img/git-logo1.svg" class="img-fluid" alt="html5 logo">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- Start of Footer -->
 
-  <!-- Portfolio Grid Section -->
-  <section id="portfolio" class="bg-primary">
+  <footer id="contact"class="page-footer">
     <div class="container">
-      <h2 class="text-center">Portfolio</h2>
-      <hr class="star-primary">
       <div class="row">
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
+        <div class="col l6 s12">
+          <form class="col s12" action="contact.php" method="post">
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix white-text">account_circle</i>
+                <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                <label for="icon_prefix" class="white-text">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix white-text">email</i>
+                <input id="icon_email" name="email" type="email" class="validate white-text">
+                <label for="icon_email" class="white-text">Email</label>
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix white-text">mode_edit</i>
+                <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
+                <label for="icon_prefix2" class="white-text">Message</label>
+              </div>
+              <div class="col offset-s7 s5">
+                <button class="btn waves-effect waves-light" type="submit">Submit
+                  <i class="mdi-content-send right white-text"></i>
+                </button>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/game.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="bg-light py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9">
-          <h3>Get In Touch</h3>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, et.</p>
-          <form>
-            <div class="form-group">
-              <div class="input-group input-group-lg">
-                <span class="input-group-addon">
-                  <i class="fa fa-user"></i>
-                </span>
-                <input type="text" class="form-control" placeholder="Name">
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="input-group input-group-lg">
-                <span class="input-group-addon">
-                  <i class="fa fa-envelope"></i>
-                </span>
-                <input type="email" class="form-control" placeholder="Email">
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="input-group input-group-lg">
-                <span class="input-group-addon">
-                  <i class="fa fa-pencil"></i>
-                </span>
-                <textarea class="form-control" placeholder="Message" rows="5"></textarea>
-              </div>
-            </div>
-            <input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">
           </form>
         </div>
-
-        <!-- Remove this col if I dont need -->
-        <div class="col-lg-3 align-self-center">
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="text-center">
-    <div class="footer-above">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col col-md-4">
-            <h3>Location</h3>
-            <p>3481 Melrose Place
-              <br>Beverly Hills, CA 90210</p>
-          </div>
-          <div class="footer-col col-md-4">
-            <h3>Around the Web</h3>
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a class="btn-social btn-outline" href="#">
-                  <i class="fa fa-fw fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-social btn-outline" href="#">
-                  <i class="fa fa-fw fa-google-plus"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-social btn-outline" href="#">
-                  <i class="fa fa-fw fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-social btn-outline" href="#">
-                  <i class="fa fa-fw fa-linkedin"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-social btn-outline" href="#">
-                  <i class="fa fa-fw fa-dribbble"></i>
-                </a>
-              </li>
+        <div class="col l3 s12">
+          <h5 class="white-text">Email Me:</h5>
+            <ul>
+              <li><a class="white-text" href="mailto:#">robertjohnwollny@gmail.com</a></li>                  
             </ul>
-          </div>
-          <div class="footer-col col-md-4">
-            <h3>About Freelancer</h3>
-            <p>Freelance is a free to use, open source Bootstrap theme created by
-              <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-          </div>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text center-align">Lets Be Social</h5>
+          <ul class="center-align">
+            <li class="centered"><a id="git"class="white-text" href="https://github.com/sunnyday90210" target="blank"><img src="img/github-icon.png" alt="github icon"></a></li>
+            <li class="centered"><a class="white-text" href="https://www.linkedin.com/in/robert-wollny-481129133/" target="blank"><img src="img/linkedin-icon.png" alt="linkedin icon"></a></li>
+            <li class="centered"><a class="white-text" href="img/rob-resume-tech.pdf" target="blank"><img src="img/resume-icon.png" alt="resume icon"></a></li>
+            
+          </ul>
         </div>
       </div>
     </div>
-    <div class="footer-below">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            Copyright &copy; Your Website 2017
-          </div>
-        </div>
+    <div class="footer-copyright">
+      <div id="copy"class="container">
+      &copy;2017 Made by Robert Wollny
       </div>
     </div>
   </footer>
-
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Project Title</h2>
-                <hr class="star-primary">
-                <img class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
-                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the
-                  entire set with 146 icons for only $12!</p>
-                <ul class="list-inline item-details">
-                  <li>Client:
-                    <strong>
-                      <a href="http://startbootstrap.com">Start Bootstrap</a>
-                    </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                      <a href="http://startbootstrap.com">April 2014</a>
-                    </strong>
-                  </li>
-                  <li>Service:
-                    <strong>
-                      <a href="http://startbootstrap.com">Web Development</a>
-                    </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Project Title</h2>
-                <hr class="star-primary">
-                <img class="img-fluid img-centered" src="img/portfolio/cake.png" alt="">
-                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the
-                  entire set with 146 icons for only $12!</p>
-                <ul class="list-inline item-details">
-                  <li>Client:
-                    <strong>
-                      <a href="http://startbootstrap.com">Start Bootstrap</a>
-                    </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                      <a href="http://startbootstrap.com">April 2014</a>
-                    </strong>
-                  </li>
-                  <li>Service:
-                    <strong>
-                      <a href="http://startbootstrap.com">Web Development</a>
-                    </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Project Title</h2>
-                <hr class="star-primary">
-                <img class="img-fluid img-centered" src="img/portfolio/circus.png" alt="">
-                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the
-                  entire set with 146 icons for only $12!</p>
-                <ul class="list-inline item-details">
-                  <li>Client:
-                    <strong>
-                      <a href="http://startbootstrap.com">Start Bootstrap</a>
-                    </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                      <a href="http://startbootstrap.com">April 2014</a>
-                    </strong>
-                  </li>
-                  <li>Service:
-                    <strong>
-                      <a href="http://startbootstrap.com">Web Development</a>
-                    </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Project Title</h2>
-                <hr class="star-primary">
-                <img class="img-fluid img-centered" src="img/portfolio/game.png" alt="">
-                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the
-                  entire set with 146 icons for only $12!</p>
-                <ul class="list-inline item-details">
-                  <li>Client:
-                    <strong>
-                      <a href="http://startbootstrap.com">Start Bootstrap</a>
-                    </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                      <a href="http://startbootstrap.com">April 2014</a>
-                    </strong>
-                  </li>
-                  <li>Service:
-                    <strong>
-                      <a href="http://startbootstrap.com">Web Development</a>
-                    </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Project Title</h2>
-                <hr class="star-primary">
-                <img class="img-fluid img-centered" src="img/portfolio/safe.png" alt="">
-                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the
-                  entire set with 146 icons for only $12!</p>
-                <ul class="list-inline item-details">
-                  <li>Client:
-                    <strong>
-                      <a href="http://startbootstrap.com">Start Bootstrap</a>
-                    </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                      <a href="http://startbootstrap.com">April 2014</a>
-                    </strong>
-                  </li>
-                  <li>Service:
-                    <strong>
-                      <a href="http://startbootstrap.com">Web Development</a>
-                    </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Project Title</h2>
-                <hr class="star-primary">
-                <img class="img-fluid img-centered" src="img/portfolio/submarine.png" alt="">
-                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the
-                  entire set with 146 icons for only $12!</p>
-                <ul class="list-inline item-details">
-                  <li>Client:
-                    <strong>
-                      <a href="http://startbootstrap.com">Start Bootstrap</a>
-                    </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                      <a href="http://startbootstrap.com">April 2014</a>
-                    </strong>
-                  </li>
-                  <li>Service:
-                    <strong>
-                      <a href="http://startbootstrap.com">Web Development</a>
-                    </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- End of footer -->
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/navbar-fixed.js"></script>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
   <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
-  <script src="js/index.js"></script>
-  
-
-
-
-</body>
-
+  <script src="js/particles.js"></script>
+  <script>
+    $(".button-collapse").sideNav();
+    $('.modal').modal();
+  </script>
+ 
+  </body>
 </html>
