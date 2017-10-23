@@ -2,7 +2,7 @@
 
 if(isset($_POST['email'])) {
 
-    $email_to = "robertjohnwollny@gmail.com";
+    $email_to = "921cac8b3c-346969@inbox.mailtrap.io";
  
     $email_subject = "Website Contact Form";
 
