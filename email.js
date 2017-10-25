@@ -1,5 +1,4 @@
 const nodemailer = require("nodemailer");
-const direct = require("nodemailer-direct-transport");
 
 const transport = nodemailer.createTransport({
   host: "smtp.mailtrap.io",
