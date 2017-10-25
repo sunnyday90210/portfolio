@@ -1,94 +1,34 @@
 <?php
-
-if(isset($_POST['email'])) {
-
-    $email_to = "921cac8b3c-346969@inbox.mailtrap.io";
- 
-    $email_subject = "Website Contact Form";
-
- 
-    function died($error) {
- 
-        // your error code can go here
- 
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
- 
-        echo "These errors appear below.<br /><br />";
- 
-        echo $error."<br /><br />";
- 
-        echo "Please go back and fix these errors.<br /><br />";
- 
-        die();
- 
-    }
- 
-     
- 
-    // validation expected data exists
- 
-    if(!isset($_POST['name']) ||
- 
-        !isset($_POST['email']) ||
- 
-        !isset($_POST['message'])) {
- 
-        died('We are sorry, but there appears to be a problem with the form you submitted.');       
- 
-    }
- 
-     
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
- 
- 
-    $email_message = "Form details below.\n\n";
- 
-     
- 
-    function clean_string($string) {
- 
-      $bad = array("content-type","bcc:","to:","cc:","href");
- 
-      return str_replace($bad,"",$string);
- 
-    }
- 
-     
- 
-    $email_message .= "Name: ".clean_string($name)."\n";
- 
-    $email_message .= "Email: ".clean_string($email)."\n";
- 
-    $email_message .= "Message: ".clean_string($message)."\n";
-
- 
-	// create email headers
-	 
-	$headers = 'From: '.$email."\r\n".
-	 
-	'Reply-To: '.$email."\r\n" .
-	 
-	'X-Mailer: PHP/' . phpversion();
-	 
-	@mail($email_to, $email_subject, $email_message, $headers);  
-
-
-?>
- 
- 
- 
-<!-- include your own success html here -->
- 
- 
- 
-Thank you for contacting me. I Will get back to as soon as possible.
- 
- 
- 
-<?php
- 
-}
- 
+$action=$_REQUEST['action'];
+if ($action=="")    /* display the contact form */
+    {
+    ?>
+    <form  action="" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="action" value="submit">
+    Your name:<br>
+    <input name="name" type="text" value="" size="30"/><br>
+    Your email:<br>
+    <input name="email" type="text" value="" size="30"/><br>
+    Your message:<br>
+    <textarea name="message" rows="7" cols="30"></textarea><br>
+    <input type="submit" value="Send email"/>
+    </form>
+    <?php
+    } 
+else                /* send the submitted data */
+    {
+    $name=$_REQUEST['name'];
+    $email=$_REQUEST['email'];
+    $message=$_REQUEST['message'];
+    if (($name=="")||($email=="")||($message==""))
+        {
+		echo "All fields are required, please fill <a href=\"\">the form</a> again.";
+	    }
+    else{		
+	    $from="From: $name<$email>\r\nReturn-path: $email";
+        $subject="Message sent using your contact form";
+		// mail("youremail@yoursite.com", $subject, $message, $from);
+		echo "Email sent!";
+	    }
+    }  
 ?>
